@@ -11,9 +11,13 @@ primordial darkness. A companion to [NYX Dev Themes](https://github.com/urtaav/n
 |---|---|---|
 | **Kuk** | `#151517` | Sky-blue keywords, pale lime types, soft yellow strings, lilac calls |
 | **Kuk Neon** | `#1F1F1F` | Pink keywords, yellow types, peach strings, lime selected row |
+| **Kuk Ember** | `#151517` | Rose-red accent, pink keywords, coral types, warm sand strings |
+| **Kuk Abyss** | `#151517` | Ocean-blue accent, blue keywords, cyan types, aqua strings |
 
 Each theme ships its own UI theme (`*.theme.json`) and editor color scheme (`*.xml`).
-Platform icons are tinted with the lime accent and tree indent guides are hidden.
+Folders in the Project view are solid and light, and tree indent guides are hidden.
+On Neon, Ember and Abyss the selected row takes the accent color and its text and icons turn dark;
+hovering a row shows a soft tint of the accent.
 
 ## Screenshots
 
@@ -22,6 +26,12 @@ Platform icons are tinted with the lime accent and tree indent guides are hidden
 
 ### Kuk Neon
 ![Kuk Neon](screenshots/2-kuk-neon.png)
+
+### Kuk Ember
+![Kuk Ember](screenshots/3-kuk-ember.png)
+
+### Kuk Abyss
+![Kuk Abyss](screenshots/4-kuk-abyss.png)
 
 ## Palette (Kuk)
 
@@ -58,7 +68,7 @@ Requirements: JDK 21. Gradle is provided by the wrapper.
 ```
 
 Palettes live in `tools/generate_themes.py`. Edit them there and regenerate instead of
-editing the JSON/XML by hand, so both themes keep the same keys:
+editing the JSON/XML by hand, so all themes keep the same keys:
 
 ```
 python tools/generate_themes.py src/main/resources

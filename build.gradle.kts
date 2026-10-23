@@ -35,8 +35,9 @@ intellijPlatform {
         }
         changeNotes = """
             <ul>
-              <li>First release: Kuk and Kuk Neon.</li>
-              <li>Charcoal UI with a lime accent and matching editor color schemes.</li>
+              <li>First release: Kuk, Kuk Neon, Kuk Ember and Kuk Abyss.</li>
+              <li>Charcoal UI with matching editor color schemes and solid light folder icons.</li>
+              <li>Accent-colored selected row with dark text and icons (Neon, Ember, Abyss).</li>
               <li>Tree indent guides hidden for a cleaner Project view.</li>
             </ul>
         """.trimIndent()

@@ -19,6 +19,7 @@
     "kukBorder": "#0F0F11",
     "kukAccent": "#DCFB58",
     "kukOnAccent": "#151517",
+    "kukRowHover": "#1E1D22",
     "kukText": "#EFEEF2",
     "kukTextBright": "#FFFFFF",
     "kukMuted": "#5A595E",
@@ -126,7 +127,7 @@
     "Link.pressedForeground": "kukAccent",
     "Link.visitedForeground": "kukAccent",
     "List.background": "kukBg",
-    "List.hoverBackground": "kukHover",
+    "List.hoverBackground": "kukRowHover",
     "List.selectionBackground": "kukSelection",
     "List.selectionInactiveBackground": "kukSelectionInactive",
     "List.selectionForeground": "kukSelectionText",
@@ -240,7 +241,7 @@
     "Table.background": "kukBg",
     "Table.stripeColor": "kukPanel",
     "Table.gridColor": "kukBorder",
-    "Table.hoverBackground": "kukHover",
+    "Table.hoverBackground": "kukRowHover",
     "Table.selectionBackground": "kukSelection",
     "Table.selectionInactiveBackground": "kukSelectionInactive",
     "TableHeader.background": "kukPanel",
@@ -280,7 +281,7 @@
     "ToolWindow.Stripe.background": "kukStripe",
     "ToolWindow.Stripe.borderColor": "kukBorder",
     "Tree.background": "kukBg",
-    "Tree.hoverBackground": "kukHover",
+    "Tree.hoverBackground": "kukRowHover",
     "Tree.selectionBackground": "kukSelection",
     "Tree.selectionInactiveBackground": "kukSelectionInactive",
     "Tree.selectionForeground": "kukSelectionText",
@@ -309,6 +310,11 @@
     "ColorPalette": {
       "Actions.Green": "#DCFB58",
       "Objects.Green": "#DCFB58"
-    }
+    },
+    "/expui/nodes/folder.svg": "/kuk/folder.svg",
+    "/nodes/folder.svg": "/kuk/folder.svg"
+  },
+  "iconColorsOnSelection": {
+    "#EEEEF1": "#FFFFFF"
   }
 }

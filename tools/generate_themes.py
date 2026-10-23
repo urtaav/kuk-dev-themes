@@ -28,7 +28,7 @@ THEMES = {
     "Kuk": dict(
         ui=dict(stripe="151517", chrome="151517", bg="151517", editor="151517", gutter="101012",
                 panel="18181B", raised="1E1D22", hover="1E1D22", selection="1E1D22", selectionText="FFFFFF",
-                selectionInactive="1A1A1D", chip="1E1D22", border="0F0F11", accent="DCFB58", onAccent="151517",
+                selectionInactive="1A1A1D", chip="1E1D22", border="0F0F11", accent="DCFB58", onAccent="151517", rowHover="1E1D22",
                 text="EFEEF2", textBright="FFFFFF", muted="5A595E", disabled="3A393D", thumb="2A2A2E",
                 thumbHover="3A3A3F", lineNumber="3A3A3E", lineNumberActive="DCFB58",
                 error="F7584B", warning="F5C451", success="DCFB58"),
@@ -41,7 +41,7 @@ THEMES = {
     "Kuk Neon": dict(
         ui=dict(stripe="1A1A1A", chrome="1F1F1F", bg="222222", editor="1F1F1F", gutter="1F1F1F",
                 panel="262626", raised="2A2A2A", hover="2C2C2C", selection="B8F23A", selectionText="101010",
-                selectionInactive="2E2E2E", chip="2E2E2E", border="2A2A2A", accent="B8F23A", onAccent="101010",
+                selectionInactive="2E2E2E", chip="2E2E2E", border="2A2A2A", accent="B8F23A", onAccent="101010", rowHover="B8F23A1F",
                 text="E6E6E6", textBright="FFFFFF", muted="8A8A8A", disabled="555555", thumb="3A3A3A",
                 thumbHover="4A4A4A", lineNumber="5A5A5A", lineNumberActive="B8F23A",
                 error="FF5F6D", warning="F2C14E", success="B8F23A"),
@@ -50,6 +50,32 @@ THEMES = {
                     brace="D8D8D8", klass="E8E06A", interface="E8E06A", field="D5E694", tag="E87FA6",
                     attribute="D5E694", annotation="E6E6E6", escape="E8A06E", comment="6A6A6A", doc="7A7A7A"),
         caret="B8F23A", keywordFont=0),
+    # Variante roja/rosa: misma base carbón que Kuk, selección rosa con texto e iconos oscuros.
+    "Kuk Ember": dict(
+        ui=dict(stripe="151517", chrome="151517", bg="151517", editor="151517", gutter="101012",
+                panel="18181B", raised="1E1D22", hover="1E1D22", selection="FF5C8A", selectionText="151517",
+                selectionInactive="2A1C22", chip="1E1D22", border="0F0F11", accent="FF5C8A", onAccent="151517",
+                rowHover="FF5C8A1F", text="EFEEF2", textBright="FFFFFF", muted="5E5A60", disabled="3A393D",
+                thumb="2A2A2E", thumbHover="3A3A3F", lineNumber="3A3A3E", lineNumberActive="FF5C8A",
+                error="FF4D5E", warning="F5C451", success="7FD88F"),
+        syntax=dict(keyword="FF7A9A", string="F6D6A8", number="FF9F7A", constant="FF9F7A",
+                    function="FFD1DC", functionCall="C9A0F0", ident="ECEAEE", punct="ECEAEE", operator="FFFFFF",
+                    brace="C9A0F0", klass="FFC9B5", interface="FFC9B5", field="F2B8C6", tag="FF7A9A",
+                    attribute="FFC9B5", annotation="FF5C8A", escape="FF5C8A", comment="5A555B", doc="6E686F"),
+        caret="FF5C8A", keywordFont=0),
+    # Variante azul: misma base carbón, selección azul con texto e iconos oscuros, números cálidos de contraste.
+    "Kuk Abyss": dict(
+        ui=dict(stripe="151517", chrome="151517", bg="151517", editor="151517", gutter="101012",
+                panel="18181B", raised="1E1D22", hover="1E1D22", selection="5AB0FF", selectionText="151517",
+                selectionInactive="1A2230", chip="1E1D22", border="0F0F11", accent="5AB0FF", onAccent="151517",
+                rowHover="5AB0FF1F", text="EFEEF2", textBright="FFFFFF", muted="5A5D64", disabled="3A3B40",
+                thumb="2A2A2E", thumbHover="3A3A3F", lineNumber="3A3B40", lineNumberActive="5AB0FF",
+                error="FF5F6D", warning="FFB86B", success="7FD8B5"),
+        syntax=dict(keyword="7AB8FF", string="A8E0D8", number="FFB86B", constant="FFB86B",
+                    function="D6E4FF", functionCall="B79CFF", ident="E8EAF0", punct="E8EAF0", operator="FFFFFF",
+                    brace="B79CFF", klass="9EE6FF", interface="9EE6FF", field="9FC4E8", tag="7AB8FF",
+                    attribute="9EE6FF", annotation="5AB0FF", escape="5AB0FF", comment="525660", doc="666B76"),
+        caret="5AB0FF", keywordFont=0),
 }
 
 # Clave UI -> rol de la paleta. "*" cubre todo componente sin clave explícita.
@@ -99,7 +125,7 @@ UI_KEYS = {
     "Label.foreground": "text", "Label.disabledForeground": "disabled", "Label.infoForeground": "muted",
     "Link.activeForeground": "accent", "Link.hoverForeground": "accent",
     "Link.pressedForeground": "accent", "Link.visitedForeground": "accent",
-    "List.background": "bg", "List.hoverBackground": "hover", "List.selectionBackground": "selection",
+    "List.background": "bg", "List.hoverBackground": "rowHover", "List.selectionBackground": "selection",
     "List.selectionInactiveBackground": "selectionInactive", "List.selectionForeground": "selectionText",
     "MainMenu.background": "chrome", "MainMenu.foreground": "text", "MainMenu.selectionBackground": "selection",
     "MainToolbar.background": "chrome", "MainToolbar.inactiveBackground": "chrome", "MainToolbar.foreground": "text",
@@ -156,7 +182,7 @@ UI_KEYS = {
     "TabbedPane.background": "bg", "TabbedPane.contentAreaColor": "bg", "TabbedPane.hoverColor": "hover",
     "TabbedPane.focusColor": "raised", "TabbedPane.underlineColor": "accent", "TabbedPane.disabledUnderlineColor": "muted",
     "Table.background": "bg", "Table.stripeColor": "panel", "Table.gridColor": "border",
-    "Table.hoverBackground": "hover", "Table.selectionBackground": "selection",
+    "Table.hoverBackground": "rowHover", "Table.selectionBackground": "selection",
     "Table.selectionInactiveBackground": "selectionInactive",
     "TableHeader.background": "panel", "TableHeader.bottomSeparatorColor": "border", "TableHeader.separatorColor": "border",
     "TextArea.background": "bg", "TextField.background": "panel", "TextPane.background": "bg",
@@ -176,7 +202,7 @@ UI_KEYS = {
     "ToolWindow.Button.hoverBackground": "hover", "ToolWindow.Button.selectedBackground": "chip",
     "ToolWindow.Button.selectedForeground": "textBright",
     "ToolWindow.Stripe.background": "stripe", "ToolWindow.Stripe.borderColor": "border",
-    "Tree.background": "bg", "Tree.hoverBackground": "hover", "Tree.selectionBackground": "selection",
+    "Tree.background": "bg", "Tree.hoverBackground": "rowHover", "Tree.selectionBackground": "selection",
     "Tree.selectionInactiveBackground": "selectionInactive", "Tree.selectionForeground": "selectionText",
     "Tree.modifiedItemForeground": "accent",
     "ValidationTooltip.errorBackground": "panel", "ValidationTooltip.errorBorderColor": "error",
@@ -194,12 +220,23 @@ def ref(role):
     return "kuk" + role[0].upper() + role[1:]
 
 
+FOLDER_FILL = "EEEEF1"  # hex exclusivo de la carpeta para poder recolorearla al seleccionar
+FOLDER_SVG = f"""<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3.5C1 2.67 1.67 2 2.5 2H6.1c.4 0 .78.16 1.06.44L8.7 4H13.5c.83 0 1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5h-11C1.67 14 1 13.33 1 12.5v-9Z" fill="#{FOLDER_FILL}"/>
+</svg>
+"""
+
+
 def theme_json(name, t, scheme_file):
     ui = {}
     for key, role in UI_KEYS.items():
         ui[key] = {k: ref(r) for k, r in role.items()} if isinstance(role, dict) else ref(role)
     # Sin máscara para que las pestañas inactivas no se vean grisáceas.
     ui["EditorTabs.inactiveMaskColor"] = "#00000000"
+    on_selection = {"#" + FOLDER_FILL: "#" + t["ui"]["selectionText"]}
+    if t["ui"]["selection"] == t["ui"]["accent"]:
+        # Selección de color: los iconos grises de la New UI pasan a oscuro, como el texto.
+        on_selection.update({"#CED0D6": "#" + t["ui"]["selectionText"], "#43454A": "#" + t["ui"]["selection"]})
     # Sin rayas de indentación en árboles (Project, dependencias); ClassicPainter las pinta con Tree.hash.
     ui["Tree.paintLines"] = False
     ui["Tree.hash"] = "#00000000"
@@ -212,7 +249,13 @@ def theme_json(name, t, scheme_file):
         "editorScheme": "/" + scheme_file,
         "colors": {ref(k): "#" + v for k, v in t["ui"].items()},
         "ui": ui,
-        "icons": {"ColorPalette": {"Actions.Green": "#" + t["ui"]["accent"], "Objects.Green": "#" + t["ui"]["accent"]}},
+        "icons": {
+            "ColorPalette": {"Actions.Green": "#" + t["ui"]["accent"], "Objects.Green": "#" + t["ui"]["accent"]},
+            # Carpeta sólida clara en lugar del contorno gris de la New UI.
+            "/expui/nodes/folder.svg": "/kuk/folder.svg",
+            "/nodes/folder.svg": "/kuk/folder.svg",
+        },
+        "iconColorsOnSelection": on_selection,
     }
 
 
@@ -397,6 +440,9 @@ def icls(name, t):
 """
 
 
+(OUT / "kuk").mkdir(exist_ok=True)
+for icon in ("folder.svg", "folder_dark.svg"):
+    (OUT / "kuk" / icon).write_text(FOLDER_SVG, encoding="utf-8", newline="")
 for name, t in THEMES.items():
     base = name.replace(" ", "-")
     (OUT / f"{base}.theme.json").write_text(
