@@ -1,6 +1,6 @@
 # Kuk Dev Themes
 
-Charcoal themes with a lime accent for JetBrains IDEs, inspired by Kuk, the Egyptian god of
+Seven dark themes and one light theme for JetBrains IDEs, inspired by Kuk, the Egyptian god of
 primordial darkness. A companion to [NYX Dev Themes](https://github.com/urtaav/nyx-dev-themes).
 
 [![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-support-DCFB58?logo=ko-fi&logoColor=black)](https://ko-fi.com/urtaav)
@@ -13,10 +13,14 @@ primordial darkness. A companion to [NYX Dev Themes](https://github.com/urtaav/n
 | **Kuk Neon** | `#1F1F1F` | Pink keywords, yellow types, peach strings, lime selected row |
 | **Kuk Ember** | `#151517` | Rose-red accent, pink keywords, coral types, warm sand strings |
 | **Kuk Abyss** | `#151517` | Ocean-blue accent, blue keywords, cyan types, aqua strings |
+| **Kuk Amber** | `#17140F` | Warm night mode: honey accent, orange keywords, olive strings |
+| **Kuk Nebula** | `#13111C` | Deep indigo, lavender accent, pink keywords, aqua types |
+| **Kuk Jade** | `#0F1513` | Green-black, jade accent, sky keywords, sand strings |
+| **Kuk Dawn** | `#FBF8F3` | Light: warm paper, terracotta accent, berry keywords |
 
 Each theme ships its own UI theme (`*.theme.json`) and editor color scheme (`*.xml`).
 Folders in the Project view are solid and light, and tree indent guides are hidden.
-On Neon, Ember and Abyss the selected row takes the accent color and its text and icons turn dark;
+On every theme except Kuk the selected row takes the accent color and its text and icons follow it;
 hovering a row shows a soft tint of the accent.
 
 ## Screenshots
@@ -32,6 +36,18 @@ hovering a row shows a soft tint of the accent.
 
 ### Kuk Abyss
 ![Kuk Abyss](screenshots/4-kuk-abyss.png)
+
+### Kuk Amber
+![Kuk Amber](screenshots/5-kuk-amber.png)
+
+### Kuk Nebula
+![Kuk Nebula](screenshots/6-kuk-nebula.png)
+
+### Kuk Jade
+![Kuk Jade](screenshots/7-kuk-jade.png)
+
+### Kuk Dawn
+![Kuk Dawn](screenshots/8-kuk-dawn.png)
 
 ## Palette (Kuk)
 

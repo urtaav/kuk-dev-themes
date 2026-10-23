@@ -76,6 +76,59 @@ THEMES = {
                     brace="B79CFF", klass="9EE6FF", interface="9EE6FF", field="9FC4E8", tag="7AB8FF",
                     attribute="9EE6FF", annotation="5AB0FF", escape="5AB0FF", comment="525660", doc="666B76"),
         caret="5AB0FF", keywordFont=0),
+    # Ámbar sobre negro cálido: modo noche acogedor, poca luz azul.
+    "Kuk Amber": dict(
+        ui=dict(stripe="17140F", chrome="17140F", bg="17140F", editor="17140F", gutter="120F0B",
+                panel="1C1813", raised="231E17", hover="231E17", selection="FFB547", selectionText="17140F",
+                selectionInactive="2E2518", chip="231E17", border="100D09", accent="FFB547", onAccent="17140F",
+                rowHover="FFB5471F", text="F2E9DC", textBright="FFFFFF", muted="6E6457", disabled="4A4238",
+                thumb="2E281F", thumbHover="3E362A", lineNumber="3E362C", lineNumberActive="FFB547",
+                error="FF6B5B", warning="FFB547", success="A8D672"),
+        syntax=dict(keyword="FF9E5E", string="C8E08A", number="9CD8F0", constant="9CD8F0",
+                    function="FFE8B8", functionCall="F7A6C8", ident="EDE4D6", punct="D9CFC0", operator="FFB547",
+                    brace="F7A6C8", klass="FFD58A", interface="FFD58A", field="F2C6A0", tag="FF9E5E",
+                    attribute="FFD58A", annotation="FFB547", escape="FFB547", comment="6B6052", doc="857A6A"),
+        caret="FFB547", keywordFont=0),
+    # Índigo profundo con lavanda, rosa y aqua: el más llamativo en capturas.
+    "Kuk Nebula": dict(
+        ui=dict(stripe="13111C", chrome="13111C", bg="13111C", editor="13111C", gutter="0F0D17",
+                panel="171422", raised="1F1B30", hover="1F1B30", selection="B18CFF", selectionText="13111C",
+                selectionInactive="261F3D", chip="1F1B30", border="0E0C16", accent="B18CFF", onAccent="13111C",
+                rowHover="B18CFF1F", text="ECE8FA", textBright="FFFFFF", muted="625C7A", disabled="3F3A54",
+                thumb="2A2540", thumbHover="3A3456", lineNumber="3A3552", lineNumberActive="B18CFF",
+                error="FF6B9A", warning="FFC36B", success="6BF2C4"),
+        syntax=dict(keyword="F48FD8", string="F9C784", number="FF9E7A", constant="FF9E7A",
+                    function="C9B6FF", functionCall="8FD8FF", ident="E9E5F7", punct="C9C2E0", operator="F48FD8",
+                    brace="8FD8FF", klass="7DF3E1", interface="7DF3E1", field="D1C4FF", tag="F48FD8",
+                    attribute="7DF3E1", annotation="B18CFF", escape="B18CFF", comment="5E587A", doc="726B90"),
+        caret="B18CFF", keywordFont=0),
+    # Negro verdoso con jade: calma y foco.
+    "Kuk Jade": dict(
+        ui=dict(stripe="0F1513", chrome="0F1513", bg="0F1513", editor="0F1513", gutter="0B100E",
+                panel="131A17", raised="18211D", hover="18211D", selection="34E0A1", selectionText="0F1513",
+                selectionInactive="1C2B25", chip="18211D", border="0A0F0D", accent="34E0A1", onAccent="0F1513",
+                rowHover="34E0A11F", text="E3F2EC", textBright="FFFFFF", muted="587068", disabled="37463F",
+                thumb="22302A", thumbHover="2F4038", lineNumber="2F3F38", lineNumberActive="34E0A1",
+                error="FF6F7D", warning="F2C76B", success="34E0A1"),
+        syntax=dict(keyword="6CCBFF", string="F2D49B", number="FF9F8A", constant="FF9F8A",
+                    function="9EF0C9", functionCall="C3A6FF", ident="E0EEE8", punct="C2D4CC", operator="34E0A1",
+                    brace="C3A6FF", klass="B8F5D4", interface="B8F5D4", field="A9D9C6", tag="6CCBFF",
+                    attribute="B8F5D4", annotation="34E0A1", escape="34E0A1", comment="4E6359", doc="627A70"),
+        caret="34E0A1", keywordFont=0),
+    # Tema claro: papel cálido, tinta oscura y acento terracota.
+    "Kuk Dawn": dict(
+        dark=False,
+        ui=dict(stripe="EFE9DF", chrome="EFE9DF", bg="F4EFE7", editor="FBF8F3", gutter="F4EFE7",
+                panel="FFFFFF", raised="EAE3D7", hover="E9E2D6", selection="D9573B", selectionText="FFFFFF",
+                selectionInactive="E6DFD2", chip="E2DACB", border="E2DACB", accent="D9573B", onAccent="FFFFFF",
+                rowHover="D9573B1A", text="2B2620", textBright="14110D", muted="8A8174", disabled="B8AFA2",
+                thumb="D3CBBE", thumbHover="BFB6A8", lineNumber="C2B9AC", lineNumberActive="D9573B",
+                caretRow="F3EDE3", error="D63B3B", warning="B7791F", success="3F8F5A"),
+        syntax=dict(keyword="B2366B", string="4E7D2A", number="C2501F", constant="C2501F",
+                    function="1D5FA6", functionCall="7A3EA8", ident="2B2620", punct="5A5248", operator="B2366B",
+                    brace="7A3EA8", klass="2F6F8F", interface="2F6F8F", field="9B4F7A", tag="B2366B",
+                    attribute="2F6F8F", annotation="D9573B", escape="C2501F", comment="9C9284", doc="8C8272"),
+        caret="D9573B", keywordFont=0),
 }
 
 # Clave UI -> rol de la paleta. "*" cubre todo componente sin clave explícita.
@@ -220,9 +273,14 @@ def ref(role):
     return "kuk" + role[0].upper() + role[1:]
 
 
-FOLDER_FILL = "EEEEF1"  # hex exclusivo de la carpeta para poder recolorearla al seleccionar
-FOLDER_SVG = f"""<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 3.5C1 2.67 1.67 2 2.5 2H6.1c.4 0 .78.16 1.06.44L8.7 4H13.5c.83 0 1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5h-11C1.67 14 1 13.33 1 12.5v-9Z" fill="#{FOLDER_FILL}"/>
+# Hex exclusivos de la carpeta para poder recolorearla al seleccionar (iconColorsOnSelection).
+FOLDER_FILL = {True: "EEEEF1", False: "6E6559"}
+FOLDER_ICON = {True: "/kuk/folder.svg", False: "/kuk/folder-light.svg"}
+
+
+def folder_svg(fill):
+    return f"""<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3.5C1 2.67 1.67 2 2.5 2H6.1c.4 0 .78.16 1.06.44L8.7 4H13.5c.83 0 1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5h-11C1.67 14 1 13.33 1 12.5v-9Z" fill="#{fill}"/>
 </svg>
 """
 
@@ -233,10 +291,12 @@ def theme_json(name, t, scheme_file):
         ui[key] = {k: ref(r) for k, r in role.items()} if isinstance(role, dict) else ref(role)
     # Sin máscara para que las pestañas inactivas no se vean grisáceas.
     ui["EditorTabs.inactiveMaskColor"] = "#00000000"
-    on_selection = {"#" + FOLDER_FILL: "#" + t["ui"]["selectionText"]}
+    dark = t.get("dark", True)
+    on_selection = {"#" + FOLDER_FILL[dark]: "#" + t["ui"]["selectionText"]}
     if t["ui"]["selection"] == t["ui"]["accent"]:
-        # Selección de color: los iconos grises de la New UI pasan a oscuro, como el texto.
-        on_selection.update({"#CED0D6": "#" + t["ui"]["selectionText"], "#43454A": "#" + t["ui"]["selection"]})
+        # Selección de color: los iconos de la New UI toman el color del texto seleccionado.
+        stroke, fill = ("#CED0D6", "#43454A") if dark else ("#6C707E", "#EBECF0")
+        on_selection.update({stroke: "#" + t["ui"]["selectionText"], fill: "#" + t["ui"]["selection"]})
     # Sin rayas de indentación en árboles (Project, dependencias); ClassicPainter las pinta con Tree.hash.
     ui["Tree.paintLines"] = False
     ui["Tree.hash"] = "#00000000"
@@ -245,15 +305,15 @@ def theme_json(name, t, scheme_file):
     return {
         "name": name,
         "author": "NYX Devs",
-        "dark": True,
+        "dark": dark,
         "editorScheme": "/" + scheme_file,
         "colors": {ref(k): "#" + v for k, v in t["ui"].items()},
         "ui": ui,
         "icons": {
             "ColorPalette": {"Actions.Green": "#" + t["ui"]["accent"], "Objects.Green": "#" + t["ui"]["accent"]},
             # Carpeta sólida clara en lugar del contorno gris de la New UI.
-            "/expui/nodes/folder.svg": "/kuk/folder.svg",
-            "/nodes/folder.svg": "/kuk/folder.svg",
+            "/expui/nodes/folder.svg": FOLDER_ICON[dark],
+            "/nodes/folder.svg": FOLDER_ICON[dark],
         },
         "iconColorsOnSelection": on_selection,
     }
@@ -421,7 +481,7 @@ def icls(name, t):
 
     color_lines = "\n".join(f'    <option name="{k}" value="{v}" />' for k, v in colors.items())
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<scheme name="{name}" version="142" parent_scheme="Darcula">
+<scheme name="{name}" version="142" parent_scheme="{"Darcula" if t.get("dark", True) else "Default"}">
   <metaInfo>
     <property name="created">{name} color scheme</property>
     <property name="ide">IntelliJ IDEA</property>
@@ -441,8 +501,9 @@ def icls(name, t):
 
 
 (OUT / "kuk").mkdir(exist_ok=True)
-for icon in ("folder.svg", "folder_dark.svg"):
-    (OUT / "kuk" / icon).write_text(FOLDER_SVG, encoding="utf-8", newline="")
+for icon, fill in (("folder.svg", FOLDER_FILL[True]), ("folder_dark.svg", FOLDER_FILL[True]),
+                   ("folder-light.svg", FOLDER_FILL[False])):
+    (OUT / "kuk" / icon).write_text(folder_svg(fill), encoding="utf-8", newline="")
 for name, t in THEMES.items():
     base = name.replace(" ", "-")
     (OUT / f"{base}.theme.json").write_text(

@@ -3,10 +3,10 @@
     <name>Kuk Dev Themes</name>
     <vendor>NYX Devs</vendor>
     <description><![CDATA[
-      <p>Charcoal themes with a lime accent for JetBrains IDEs, inspired by Kuk,
+      <p>Seven dark themes and one light theme for JetBrains IDEs, inspired by Kuk,
       the Egyptian god of primordial darkness. A companion to NYX Dev Themes.</p>
       <p>Flat #151517 surfaces, a darker gutter, bright file tree and an editor color scheme
-      tuned to match each UI theme. Solid light folders in the Project view; on Neon, Ember and Abyss
+      tuned to match each UI theme. Solid light folders in the Project view; on every theme except Kuk
       the selected row takes the accent color and its text and icons turn dark.</p>
       <h3>Included themes</h3>
       <ul>
@@ -14,6 +14,10 @@
         <li><b>Kuk Neon</b> — pink keywords, yellow types, peach strings and a lime selected row.</li>
         <li><b>Kuk Ember</b> — rose-red accent, pink keywords, coral types and warm sand strings.</li>
         <li><b>Kuk Abyss</b> — ocean-blue accent, blue keywords, cyan types and aqua strings.</li>
+        <li><b>Kuk Amber</b> — warm night mode: honey accent on warm black, low blue light.</li>
+        <li><b>Kuk Nebula</b> — deep indigo with lavender, pink and aqua.</li>
+        <li><b>Kuk Jade</b> — green-black with a calm jade accent.</li>
+        <li><b>Kuk Dawn</b> — light theme: warm paper, dark ink and a terracotta accent.</li>
       </ul>
       <h3>How to use</h3>
       <p>Go to <b>Settings → Appearance &amp; Behavior → Appearance</b> and pick a Kuk theme.
@@ -28,5 +32,9 @@
         <themeProvider id="dev.nyxdevs.kuk.neon" path="/Kuk-Neon.theme.json"/>
         <themeProvider id="dev.nyxdevs.kuk.ember" path="/Kuk-Ember.theme.json"/>
         <themeProvider id="dev.nyxdevs.kuk.abyss" path="/Kuk-Abyss.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.amber" path="/Kuk-Amber.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.nebula" path="/Kuk-Nebula.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.jade" path="/Kuk-Jade.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.dawn" path="/Kuk-Dawn.theme.json"/>
     </extensions>
 </idea-plugin>
