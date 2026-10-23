@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>dev.nyxdevs.kuk</id>
+    <name>Kuk Dev Themes</name>
+    <vendor>NYX Devs</vendor>
+    <description><![CDATA[
+      <p>Charcoal themes with a lime accent for JetBrains IDEs, inspired by Kuk,
+      the Egyptian god of primordial darkness. A companion to NYX Dev Themes.</p>
+      <p>Flat #151517 surfaces, a darker gutter, bright file tree and an editor color scheme
+      tuned to match each UI theme. Platform icons are tinted with the lime accent.</p>
+      <h3>Included themes</h3>
+      <ul>
+        <li><b>Kuk</b> — sky-blue keywords, pale lime types, soft yellow strings and lilac calls.</li>
+        <li><b>Kuk Neon</b> — pink keywords, yellow types, peach strings and a lime selected row.</li>
+      </ul>
+      <h3>How to use</h3>
+      <p>Go to <b>Settings → Appearance &amp; Behavior → Appearance</b> and pick a Kuk theme.
+      The matching editor scheme is applied automatically; if not, select it under
+      <b>Editor → Color Scheme</b>.</p>
+      <p>Free and open source. If Kuk makes your code feel better, you can
+      <a href="https://ko-fi.com/urtaav">buy me a coffee on Ko-fi</a>.</p>
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="dev.nyxdevs.kuk.kuk" path="/Kuk.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.neon" path="/Kuk-Neon.theme.json"/>
+    </extensions>
+</idea-plugin>
