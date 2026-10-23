@@ -3,7 +3,7 @@
     <name>Kuk Dev Themes</name>
     <vendor>NYX Devs</vendor>
     <description><![CDATA[
-      <p>Seven dark themes and one light theme for JetBrains IDEs, inspired by Kuk,
+      <p>Eight dark themes and two light themes for JetBrains IDEs, inspired by Kuk,
       the Egyptian god of primordial darkness. A companion to NYX Dev Themes.</p>
       <p>Flat #151517 surfaces, a darker gutter, bright file tree and an editor color scheme
       tuned to match each UI theme. Solid light folders in the Project view; on every theme except Kuk
@@ -18,6 +18,8 @@
         <li><b>Kuk Nebula</b> — deep indigo with lavender, pink and aqua.</li>
         <li><b>Kuk Jade</b> — green-black with a calm jade accent.</li>
         <li><b>Kuk Dawn</b> — light theme: warm paper, dark ink and a terracotta accent.</li>
+        <li><b>Kuk Slate</b> — monochrome slate with bold keywords and a blue-gray accent.</li>
+        <li><b>Kuk Matcha</b> — light theme: ink on paper with a soft matcha-lime selection.</li>
       </ul>
       <h3>How to use</h3>
       <p>Go to <b>Settings → Appearance &amp; Behavior → Appearance</b> and pick a Kuk theme.
@@ -36,5 +38,7 @@
         <themeProvider id="dev.nyxdevs.kuk.nebula" path="/Kuk-Nebula.theme.json"/>
         <themeProvider id="dev.nyxdevs.kuk.jade" path="/Kuk-Jade.theme.json"/>
         <themeProvider id="dev.nyxdevs.kuk.dawn" path="/Kuk-Dawn.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.slate" path="/Kuk-Slate.theme.json"/>
+        <themeProvider id="dev.nyxdevs.kuk.matcha" path="/Kuk-Matcha.theme.json"/>
     </extensions>
 </idea-plugin>

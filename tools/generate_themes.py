@@ -129,6 +129,35 @@ THEMES = {
                     brace="7A3EA8", klass="2F6F8F", interface="2F6F8F", field="9B4F7A", tag="B2366B",
                     attribute="2F6F8F", annotation="D9573B", escape="C2501F", comment="9C9284", doc="8C8272"),
         caret="D9573B", keywordFont=0),
+    # Paleta 1 del autor: pizarra monocroma #21262B / #A9A9A9 / #F1F1F1 / #778898.
+    "Kuk Slate": dict(
+        ui=dict(stripe="1C2025", chrome="1C2025", bg="21262B", editor="21262B", gutter="1D2126",
+                panel="262C32", raised="2B3238", hover="2B3238", selection="778898", selectionText="F1F1F1",
+                selectionInactive="2E363E", chip="2B3238", border="1A1E22", accent="778898", onAccent="F1F1F1",
+                accentText="9AA9B9", rowHover="7788982E", text="F1F1F1", textBright="FFFFFF", muted="A9A9A9",
+                disabled="5A626B", thumb="353D45", thumbHover="46505A", lineNumber="4E5862",
+                lineNumberActive="F1F1F1", error="E07A7A", warning="D9B97A", success="8FBF9A"),
+        syntax=dict(keyword="9AA9B9", string="A9A9A9", number="B8C4D0", constant="B8C4D0",
+                    function="DDE3E9", functionCall="C6CED6", ident="D6D6D6", punct="A9A9A9", operator="9AA9B9",
+                    brace="A9A9A9", klass="F1F1F1", interface="F1F1F1", field="C6CED6", tag="9AA9B9",
+                    attribute="A9A9A9", annotation="9AA9B9", escape="DDE3E9", comment="6B7682", doc="7D8894"),
+        caret="F1F1F1", keywordFont=1),
+    # Paleta 2 del autor: claro #F7F7F7 / #373634 / #DCEB7D / #EEF3E1 / #000000.
+    # El lima es fondo (selección, botón, subrayado); como texto se usa oliva oscuro legible.
+    "Kuk Matcha": dict(
+        dark=False,
+        ui=dict(stripe="E6ECD6", chrome="EEF3E1", bg="EEF3E1", editor="F7F7F7", gutter="F7F7F7",
+                panel="FFFFFF", raised="EEF3E1", hover="E6ECD6", selection="DCEB7D", selectionText="000000",
+                selectionInactive="E6ECD6", chip="DCEB7D", border="E2E6D8", accent="DCEB7D", onAccent="000000",
+                accentText="5F6F12", rowHover="DCEB7D66", editorSelection="DCEB7D", caretRow="EEF3E1",
+                text="373634", textBright="000000", muted="8A8984", disabled="B5B4AE", thumb="D5D9CC",
+                thumbHover="C2C7B8", lineNumber="B8B7B1", lineNumberActive="000000",
+                error="C93A3A", warning="A86F12", success="5E7F1A"),
+        syntax=dict(keyword="000000", string="5F6F12", number="8C7A12", constant="8C7A12",
+                    function="000000", functionCall="373634", ident="373634", punct="5A5955", operator="000000",
+                    brace="5A5955", klass="000000", interface="000000", field="55544F", tag="000000",
+                    attribute="5F6F12", annotation="5F6F12", escape="5F6F12", comment="9A9993", doc="8A8984"),
+        caret="000000", keywordFont=1),
 }
 
 # Clave UI -> rol de la paleta. "*" cubre todo componente sin clave explícita.
@@ -154,7 +183,7 @@ UI_KEYS = {
     "ComboBox.ArrowButton.background": "panel", "ComboBox.ArrowButton.nonEditableBackground": "panel",
     "ComboBox.selectionBackground": "selection", "ComboBoxButton.background": "panel",
     "CompletionPopup.background": "panel", "CompletionPopup.selectionBackground": "selection",
-    "CompletionPopup.selectionInactiveBackground": "selectionInactive", "CompletionPopup.matchForeground": "accent",
+    "CompletionPopup.selectionInactiveBackground": "selectionInactive", "CompletionPopup.matchForeground": "accentText",
     "Component.borderColor": "border", "Component.disabledBorderColor": "border",
     "Component.focusColor": "accent", "Component.focusedBorderColor": "accent",
     "Component.iconColor": "muted", "Component.hoverIconColor": "text",
@@ -165,7 +194,7 @@ UI_KEYS = {
     "DefaultTabs.underlineColor": "accent", "DefaultTabs.inactiveUnderlineColor": "muted",
     "DefaultTabs.underlinedTabBackground": "raised", "DefaultTabs.underlinedTabForeground": "textBright",
     "DragAndDrop.areaBackground": "selection",
-    "Editor.background": "editor", "Editor.foreground": "text", "Editor.shortcutForeground": "accent",
+    "Editor.background": "editor", "Editor.foreground": "text", "Editor.shortcutForeground": "accentText",
     "Editor.SearchField.background": "panel", "Editor.Toolbar.borderColor": "border",
     "EditorPane.background": "editor",
     "EditorTabs.background": "chrome", "EditorTabs.borderColor": "border", "EditorTabs.hoverBackground": "hover",
@@ -176,8 +205,8 @@ UI_KEYS = {
     "Group.separatorColor": "border",
     "InplaceRefactoringPopup.background": "panel", "InplaceRefactoringPopup.borderColor": "border",
     "Label.foreground": "text", "Label.disabledForeground": "disabled", "Label.infoForeground": "muted",
-    "Link.activeForeground": "accent", "Link.hoverForeground": "accent",
-    "Link.pressedForeground": "accent", "Link.visitedForeground": "accent",
+    "Link.activeForeground": "accentText", "Link.hoverForeground": "accentText",
+    "Link.pressedForeground": "accentText", "Link.visitedForeground": "accentText",
     "List.background": "bg", "List.hoverBackground": "rowHover", "List.selectionBackground": "selection",
     "List.selectionInactiveBackground": "selectionInactive", "List.selectionForeground": "selectionText",
     "MainMenu.background": "chrome", "MainMenu.foreground": "text", "MainMenu.selectionBackground": "selection",
@@ -195,7 +224,7 @@ UI_KEYS = {
     "NotificationsToolwindow.Notification.hoverBackground": "hover",
     "Panel.background": "bg",
     "ParameterInfo.background": "panel", "ParameterInfo.foreground": "text",
-    "ParameterInfo.borderColor": "border", "ParameterInfo.currentParameterForeground": "accent",
+    "ParameterInfo.borderColor": "border", "ParameterInfo.currentParameterForeground": "accentText",
     "PasswordField.background": "panel",
     "Plugins.background": "bg", "Plugins.SearchField.background": "panel", "Plugins.SectionHeader.background": "bg",
     "Plugins.lightSelectionBackground": "selection", "Plugins.hoverBackground": "hover",
@@ -257,7 +286,7 @@ UI_KEYS = {
     "ToolWindow.Stripe.background": "stripe", "ToolWindow.Stripe.borderColor": "border",
     "Tree.background": "bg", "Tree.hoverBackground": "rowHover", "Tree.selectionBackground": "selection",
     "Tree.selectionInactiveBackground": "selectionInactive", "Tree.selectionForeground": "selectionText",
-    "Tree.modifiedItemForeground": "accent",
+    "Tree.modifiedItemForeground": "accentText",
     "ValidationTooltip.errorBackground": "panel", "ValidationTooltip.errorBorderColor": "error",
     "ValidationTooltip.warningBackground": "panel", "ValidationTooltip.warningBorderColor": "warning",
     "VersionControl.Log.Commit.currentBranchBackground": "raised", "VersionControl.Log.Commit.hoveredBackground": "hover",
@@ -292,6 +321,7 @@ def theme_json(name, t, scheme_file):
     # Sin máscara para que las pestañas inactivas no se vean grisáceas.
     ui["EditorTabs.inactiveMaskColor"] = "#00000000"
     dark = t.get("dark", True)
+    t["ui"].setdefault("accentText", t["ui"]["accent"])
     on_selection = {"#" + FOLDER_FILL[dark]: "#" + t["ui"]["selectionText"]}
     if t["ui"]["selection"] == t["ui"]["accent"]:
         # Selección de color: los iconos de la New UI toman el color del texto seleccionado.
@@ -343,7 +373,7 @@ def icls(name, t):
         "LINE_NUMBER_ON_CARET_ROW_COLOR": u.get("lineNumberActive") or u["text"],
         "INDENT_GUIDE": u["border"], "SELECTED_INDENT_GUIDE": u["thumbHover"], "VISUAL_INDENT_GUIDE": u["border"],
         # La selección de listas (#1C1A1C) es muy sutil para texto; en el editor va teñida de acento.
-        "SELECTION_BACKGROUND": mix(u["accent"], bg, 0.78), "SELECTION_FOREGROUND": "",
+        "SELECTION_BACKGROUND": u.get("editorSelection") or mix(u["accent"], bg, 0.78), "SELECTION_FOREGROUND": "",
         "TEARLINE_COLOR": u["border"], "SELECTED_TEARLINE_COLOR": u["muted"],
         "RIGHT_MARGIN_COLOR": u["border"], "METHOD_SEPARATORS_COLOR": u["border"],
         "WHITESPACES": u["thumb"], "SOFT_WRAP_SIGN_COLOR": u["thumb"],

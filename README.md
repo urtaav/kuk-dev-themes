@@ -1,6 +1,6 @@
 # Kuk Dev Themes
 
-Seven dark themes and one light theme for JetBrains IDEs, inspired by Kuk, the Egyptian god of
+Eight dark themes and two light themes for JetBrains IDEs, inspired by Kuk, the Egyptian god of
 primordial darkness. A companion to [NYX Dev Themes](https://github.com/urtaav/nyx-dev-themes).
 
 [![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-support-DCFB58?logo=ko-fi&logoColor=black)](https://ko-fi.com/urtaav)
@@ -17,6 +17,8 @@ primordial darkness. A companion to [NYX Dev Themes](https://github.com/urtaav/n
 | **Kuk Nebula** | `#13111C` | Deep indigo, lavender accent, pink keywords, aqua types |
 | **Kuk Jade** | `#0F1513` | Green-black, jade accent, sky keywords, sand strings |
 | **Kuk Dawn** | `#FBF8F3` | Light: warm paper, terracotta accent, berry keywords |
+| **Kuk Slate** | `#21262B` | Monochrome slate, blue-gray accent, bold keywords |
+| **Kuk Matcha** | `#F7F7F7` | Light: ink on paper, matcha-lime selection, olive strings |
 
 Each theme ships its own UI theme (`*.theme.json`) and editor color scheme (`*.xml`).
 Folders in the Project view are solid and light, and tree indent guides are hidden.
@@ -48,6 +50,12 @@ hovering a row shows a soft tint of the accent.
 
 ### Kuk Dawn
 ![Kuk Dawn](screenshots/8-kuk-dawn.png)
+
+### Kuk Slate
+![Kuk Slate](screenshots/9-kuk-slate.png)
+
+### Kuk Matcha
+![Kuk Matcha](screenshots/10-kuk-matcha.png)
 
 ## Palette (Kuk)
 

@@ -35,7 +35,7 @@ intellijPlatform {
         }
         changeNotes = """
             <ul>
-              <li>First release: Kuk, Kuk Neon, Kuk Ember, Kuk Abyss, Kuk Amber, Kuk Nebula, Kuk Jade and Kuk Dawn (light).</li>
+              <li>First release: Kuk, Kuk Neon, Kuk Ember, Kuk Abyss, Kuk Amber, Kuk Nebula, Kuk Jade, Kuk Slate, Kuk Dawn (light) and Kuk Matcha (light).</li>
               <li>Charcoal UI with matching editor color schemes and solid light folder icons.</li>
               <li>Accent-colored selected row with matching text and icons on every theme except Kuk.</li>
               <li>Tree indent guides hidden for a cleaner Project view.</li>
